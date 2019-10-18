@@ -9,5 +9,6 @@
 ## Notes: That's right, you'll become my friend! (EU only, max 100)
 ## Author: Ketho
 ## X-Curse-Project-ID: 348348
+## X-WoWI-ID: 25408
 
 BecomeMyFriend.lua
