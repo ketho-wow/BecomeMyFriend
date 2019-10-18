@@ -19,4 +19,16 @@ local function BecomeFriend(region, friendName)
 	end
 end
 
+-- accept all battletag friend invites
+local function AcceptFriendInvites()
+	for i = 1, BNGetNumFriendInvites() do
+		local inviteID, name, isBattleTag = BNGetFriendInviteInfo(i)
+		if isBattleTag then
+			print("BecomeMyFriend: Accepting "..name)
+			BNAcceptFriendInvite(inviteID)
+		end
+	end
+end
+
 BecomeFriend(3, "Ketho#2355") -- EU
+--AcceptFriendInvites()
